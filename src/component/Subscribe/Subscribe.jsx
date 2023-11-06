@@ -24,7 +24,7 @@ const Subscribe = () => {
           </p>
           <input
             type="text"
-            className="border shadow-lg rounded-full w-full mt-7 mb-8 py-[10px] px-5 md:px-7 text-[18px] font-ageo"
+            className="border shadow-lg rounded-full outline-none  w-full mt-7 mb-8 py-[10px] px-5 md:px-7 text-[18px] font-ageo"
             placeholder="Join with us using email"
           />
           <button className="text-base w-full bg-primary text-white tracking-wide py-[6px] px-[10px] rounded-[8px] font-medium font-dm shadow-md hover:bg-darkPrimary">
