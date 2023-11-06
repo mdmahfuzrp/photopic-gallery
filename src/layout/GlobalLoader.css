@@ -1,0 +1,18 @@
+.globalLoader{
+    font-size: 25px;
+    color: #FF6600;
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: -5px;
+  }
+  .globalLoader:after{
+    content: '';
+    height: 4px;
+    width:0%;
+    display: block;
+    background: #FF6600;
+    animation: 1.6s lineGrow linear infinite;
+  }
+  
+  @keyframes lineGrow {to{width: 100%;}}

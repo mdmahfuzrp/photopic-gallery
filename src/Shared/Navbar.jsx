@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { useEffect, useState } from "react";
+import logoDark from '../../public/logo-dark.png';
+import logoWhite from '../../public/logo-white.png';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const itemList = (
@@ -67,7 +69,7 @@ const Navbar = () => {
     <div className={`${isVisible && 'shadow-sm duration-150'} fixed w-full bg-white z-[999] top-0`}>
       <div className="hidden md:flex items-center justify-between max-w-[1300px] mx-auto py-4 px-5 pl-[18px]">
         <div>
-          <img src="/public/logo-dark.png" className="h-[35px]" alt="" />
+          <img src={logoDark} className="h-[35px]" alt="" />
         </div>
         <div>
           <ul className="flex gap-4 font-medium text-[18px]">{itemList}</ul>
@@ -86,13 +88,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {isMenuOpen ? (
             <img
-              src="/public/logo-white.png"
+              src={logoWhite}
               className="h-[32px] z-[99999]"
               alt=""
             />
           ) : (
             <img
-              src="/public/logo-dark.png"
+              src={logoDark}
               className="h-[32px] z-[99999]"
               alt=""
             />
