@@ -39,9 +39,11 @@ const Header = () => {
         
       </div>
       
-      <div className="w-full absolute bottom-[50px] left-[0] flex items-center justify-center">
+      <div className="w-full absolute bottom-[50px] left-[0] flex flex-col gap-[10px] items-center justify-center">
           <a href="#gallery" className="mouseLoader"></a>
+          <small className="capitalize text-[15px] font-normal font-ageo text-[#848484]">Scroll to see gallery functionality</small>
           </div>
+
     </div>
   );
 };
