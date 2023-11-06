@@ -6,7 +6,8 @@ import { BsFillImageFill } from "react-icons/bs";
 import { MdLibraryAddCheck } from "react-icons/md";
 import "./OllyoGallery.css";
 import { toast } from "react-toastify";
-import {TbStarFilled} from 'react-icons/tb'
+import { TbStarFilled } from "react-icons/tb";
+import SectionTitle from "../../SharedSmallComponent/SectionTitle";
 
 const IMAGE_HOSTING_TOKEN = import.meta.env.VITE_IMAGE_HOSTING_TOKEN;
 const GalleryImagesOrder = "galleryImageOrderList";
@@ -25,7 +26,9 @@ const OllyoGallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get("https://photopic-server.vercel.app/all_images");
+        const response = await axios.get(
+          "https://photopic-server.vercel.app/all_images"
+        );
         setImages(response.data);
         setLoading(false);
       } catch (err) {
@@ -200,9 +203,18 @@ const OllyoGallery = () => {
   return (
     <div className="max-w-[1300px] mx-auto font-dm mt-[-45px]">
       <div className="font-ageo w-full flex flex-col items-center justify-center mb-5">
-        <p className="text-[16px] tracking-widest text-gray-400 font-medium uppercase">Gallery</p>
-        <h2 className="text-[25px] lg:text-[35px] font-bold text-secondary">Gallery Functionality</h2>
-        <p className="font-ageo font-medium text-base text-gray-600 tracking-wider flex items-center justify-center gap-2"><span>Drag & Drop</span> <small className="text-primary mt-[-3px]"><TbStarFilled /></small> <span>Re-Order</span> <small className="text-primary mt-[-3px]"><TbStarFilled /></small> <span>Delete</span></p>
+        <SectionTitle section="Gallery" title="Gallery Functionality" />
+        <p className="font-ageo font-medium text-base text-gray-600 tracking-wider flex items-center justify-center gap-2">
+          <span>Drag & Drop</span>{" "}
+          <small className="text-primary mt-[-3px]">
+            <TbStarFilled />
+          </small>{" "}
+          <span>Re-Order</span>{" "}
+          <small className="text-primary mt-[-3px]">
+            <TbStarFilled />
+          </small>{" "}
+          <span>Delete</span>
+        </p>
       </div>
       <div className="mb-4">
         {selectedImage.length > 0 ? (
