@@ -196,6 +196,35 @@ const OllyoGallery = () => {
   if (loading) {
     return (
       <div className="max-w-[1300px] mx-auto">
+        <div className="font-ageo w-full flex flex-col items-center justify-center mb-5">
+          <SectionTitle section="Gallery" title="Gallery Functionality" />
+          <p className="font-ageo font-medium text-base text-gray-600 tracking-wider flex items-center justify-center gap-2">
+            <span>Upload</span>{" "}
+            <small className="text-primary mt-[-3px]">
+              <TbStarFilled />
+            </small>{" "}
+            <span>Drag & Drop</span>{" "}
+            <small className="text-primary mt-[-3px]">
+              <TbStarFilled />
+            </small>{" "}
+            <span>Re-Order</span>{" "}
+            <small className="text-primary mt-[-3px]">
+              <TbStarFilled />
+            </small>{" "}
+            <span>Delete</span>
+          </p>
+        </div>
+        <div className="mb-4">
+          <div>
+            <h1 className="text-base md:text-[20px] font-semibold font-ageo text-primary">
+              Gallery
+            </h1>
+          </div>
+        </div>
+        <div className="absolute w-full left-0">
+          <hr className="border" />
+        </div>
+
         <span className="galleryLoader"></span>
       </div>
     );
@@ -206,7 +235,7 @@ const OllyoGallery = () => {
       <div className="font-ageo w-full flex flex-col items-center justify-center mb-5">
         <SectionTitle section="Gallery" title="Gallery Functionality" />
         <p className="font-ageo font-medium text-base text-gray-600 tracking-wider flex items-center justify-center gap-2">
-        <span>Upload</span>{" "}
+          <span>Upload</span>{" "}
           <small className="text-primary mt-[-3px]">
             <TbStarFilled />
           </small>{" "}
