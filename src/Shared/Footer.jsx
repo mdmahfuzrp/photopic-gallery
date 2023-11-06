@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from '../../public/logo-dark.png'
 const Footer = () => {
   return (
-    <div className="">
+    <div className="mb-[30px]">
       <div className="max-w-[1300px] mx-auto px-[19px]">
         <div className="flex flex-col gap-2 sm:flex-row items-center justify-between border-b pb-4 mb-4">
           <img src={logo} alt="" className="z-[0] h-[25px] opacity-80" />
@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-            <p className="text-[18px] text-gray-500">Projects just a simple ui but the main focus is drag and drop image functionality and this for showcase your gallery</p>
+            <p className="text-[18px] text-gray-500">Projects just a simple ui but the main focus is drag and drop image functionality and this for showcase for ollyo gallery</p>
         </div>
       </div>
     </div>

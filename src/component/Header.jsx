@@ -5,10 +5,10 @@ import ideaArrow from "../assets/images/ideaarrow.png";
 
 const Header = () => {
   return (
-    <div className="mt-[50px]">
+    <div className="mt-[70px] sm:mt-[120px]">
       <div className="flex flex-col md:flex-row items-center  md:justify-evenly gap-7">
         <div className="w-full md:mi-w-[70%]  flex items-center flex-col text-center mt-[30px] md:text-left md:items-start">
-          <h1 className="text-[35px] lg:text-[50px] mt-[-40px] md:mt-[-40px] lg:mt-[-150px] leading-[50px] lg:leading-[60px] font-[850] text-secondary font-ageo mb-2">
+          <h1 className="text-[35px] lg:text-[50px] mt-[0px] md:mt-[-40px] lg:mt-[-150px] leading-[50px] lg:leading-[60px] font-[850] text-secondary font-ageo mb-2">
             <span className="text-primary">Scroll Down</span> To Get <br />
              Experience With Our <br />
             <span className="text-primary">Gallery Functionality</span>
@@ -39,7 +39,7 @@ const Header = () => {
         
       </div>
       
-      <div className="w-full absolute bottom-[50px] left-[0] flex flex-col gap-[10px] items-center justify-center">
+      <div className="w-full hidden absolute bottom-[50px] left-[0] lg:flex flex-col gap-[10px] items-center justify-center">
           <a href="#gallery" className="mouseLoader"></a>
           <small className="capitalize text-[15px] font-normal font-ageo text-[#848484]">Scroll to see gallery functionality</small>
           </div>

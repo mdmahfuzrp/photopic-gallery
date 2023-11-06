@@ -10,20 +10,20 @@ const Home = () => {
   return (
     <div className="">
       <ToastContainer />
-      <div>
+      <div className="" id="home">
         <Header />
       </div>
       <div className="mb-[100px]" id="gallery">
         <OllyoGallery />
       </div>
-      <div>
+      <div id="our-vision">
         <OurVision />
         <VideoPlayer />
       </div>
-      <div>
+      <div id="testimonial">
         <Testimonial />
       </div>
-      <div className="">
+      <div className="" id="subscribe">
         <Subscribe />
       </div>
     </div>

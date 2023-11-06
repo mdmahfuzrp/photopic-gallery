@@ -10,6 +10,7 @@ import { TbStarFilled } from "react-icons/tb";
 import SectionTitle from "../../SharedSmallComponent/SectionTitle";
 
 const IMAGE_HOSTING_TOKEN = import.meta.env.VITE_IMAGE_HOSTING_TOKEN;
+console.log(IMAGE_HOSTING_TOKEN);
 const GalleryImagesOrder = "galleryImageOrderList";
 
 const OllyoGallery = () => {
@@ -205,6 +206,10 @@ const OllyoGallery = () => {
       <div className="font-ageo w-full flex flex-col items-center justify-center mb-5">
         <SectionTitle section="Gallery" title="Gallery Functionality" />
         <p className="font-ageo font-medium text-base text-gray-600 tracking-wider flex items-center justify-center gap-2">
+        <span>Upload</span>{" "}
+          <small className="text-primary mt-[-3px]">
+            <TbStarFilled />
+          </small>{" "}
           <span>Drag & Drop</span>{" "}
           <small className="text-primary mt-[-3px]">
             <TbStarFilled />

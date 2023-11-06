@@ -36,7 +36,7 @@ const Testimonial = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-7 mt-5">
 {
     reviewData.map((review, i) =>(
-        <div key={i} className="flex flex-col sm:flex-row gap-[20px] items-start w-full max-w-[450px]">
+        <div key={i} className="flex flex-col sm:flex-row gap-[20px] items-start w-full sm:max-w-[450px]">
             <div>
                 <img src={review?.clientPhoto} className="max-w-[50px] mt-[5px] rounded-md" alt="" />
             </div>
