@@ -9,7 +9,7 @@ const MainWebsite = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
   return isLoading ? (
     <div className="flex items-center justify-center min-h-[85vh]">
