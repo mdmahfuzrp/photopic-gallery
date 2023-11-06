@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: 'Ageo Personal Use', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.mouseLoader {
+    width: 28px;
+    height: 45px;
+    position: relative;
+  }
+  
+  .mouseLoader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50% , 50%);
+    width: 9px;
+    height: 9px;
+    background: #bcbaba;
+    border-radius: 50%;
+    animation: bounce 1s ease-in infinite alternate;
+  }
+  .mouseLoader::after {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 28px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #c0c0c0;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+    animation: kick 1s ease-in infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: 5%;
+      opacity: 1;
+    }
+    100% {
+      top: 45%;
+      opacity: 0.7;
+    }
+  }
+ 
