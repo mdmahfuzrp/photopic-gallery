@@ -6,18 +6,18 @@ const Navbar = () => {
   const itemList = (
     <>
       <li className="hover:text-primary duration-150 cursor-pointer">Home</li>
-      <a className="hover:text-primary duration-150 cursor-pointer">
+      <li className="hover:text-primary duration-150 cursor-pointer">
         Gallery
-      </a>
-      <a className="hover:text-primary duration-150 cursor-pointer">
+      </li>
+      <li className="hover:text-primary duration-150 cursor-pointer">
         About Us
-      </a>
-      <a className="hover:text-primary duration-150 cursor-pointer">
+      </li>
+      <li className="hover:text-primary duration-150 cursor-pointer">
         Our App
-      </a>
-      <a className="hover:text-primary duration-150 cursor-pointer">
+      </li>
+      <li className="hover:text-primary duration-150 cursor-pointer">
         Contacts
-      </a>
+      </li>
     </>
   );
   return (
