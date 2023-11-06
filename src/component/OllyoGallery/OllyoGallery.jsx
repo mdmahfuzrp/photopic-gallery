@@ -208,7 +208,7 @@ const OllyoGallery = () => {
         {selectedImage.length > 0 ? (
           <div className="flex justify-between items-center">
             <h1 className="text-base md:text-xl text-[#333] font-semibold flex gap-2 items-center">
-              <span className="text-[#4674ff]">
+              <span className="text-primary">
                 <MdLibraryAddCheck />
               </span>
               <span>
@@ -218,14 +218,14 @@ const OllyoGallery = () => {
             </h1>
             <button
               onClick={handleDeleteFiles}
-              className="text-primary text-base font-ageo md:text-xl font-semibold hover:underline"
+              className="text-white bg-primary text-base lg:text-[18px] font-ageo font-medium py-[6px] px-3 rounded-full shadow-primaryShadow hover:bg-darkPrimary duration-150 tracking-wide"
             >
               Delete File
             </button>
           </div>
         ) : (
           <div>
-            <h1 className="text-base md:text-[20px] font-semibold font-ageo">
+            <h1 className="text-base md:text-[20px] font-semibold font-ageo text-primary">
               Gallery
             </h1>
           </div>
