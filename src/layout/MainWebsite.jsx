@@ -6,23 +6,29 @@ import "./GlobalLoader.css";
 
 const MainWebsite = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate data loading in the background
   useEffect(() => {
+    // Simulate data loading delay with a setTimeout
     setTimeout(() => {
-      setIsLoading(false);
+      setIsLoading(false); // Set isLoading to false after 2 seconds
     }, 1500);
   }, []);
+
   return (
     <div>
-      <Navbar />
-      <div className="max-w-[1300px] px-5 mx-auto">
-        <Outlet />
-      </div>
-      <Footer />
-
-      {isLoading && (
-        <div className="absolute w-full flex items-center justify-center min-h-[85vh]">
+      {isLoading ? (
+        <div className="absolute w-full h-screen flex items-center justify-center">
           <span className="globalLoader">Loading...</span>
         </div>
+      ) : (
+        <>
+          <Navbar />
+          <div className="max-w-[1300px] px-5 mx-auto">
+            <Outlet />
+          </div>
+          <Footer />
+        </>
       )}
     </div>
   );
