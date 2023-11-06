@@ -9,7 +9,7 @@ const OurVision = () => {
           Aesthetic Gallery
         </h1>
         <p
-          className="text-base tracking-wide text-center mb-3
+          className="text-base text-[#7d7d7d] tracking-wide text-center mb-3
             "
         >
           Discover the captivating world of aesthetic beauty with our curated
@@ -26,7 +26,7 @@ const OurVision = () => {
           Video Player
         </h1>
         <p
-          className="text-base tracking-wide text-center mb-3
+          className="text-base tracking-wide text-[#7d7d7d] text-center mb-3
             "
         >
           Experience seamless entertainment with our state-of-the-art video
@@ -45,7 +45,7 @@ const OurVision = () => {
           Security
         </h1>
         <p
-          className="text-base tracking-wide text-center mb-3
+          className="text-base text-[#7d7d7d] tracking-wide text-center mb-3
             "
         >
           Your protection is our priority. With our comprehensive security services, we offer round-the-clock safety, ensuring a secure environment for your home or business.

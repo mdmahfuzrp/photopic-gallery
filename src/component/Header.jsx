@@ -13,9 +13,9 @@ const Header = () => {
              Experience With Our <br />
             <span className="text-primary">Gallery Functionality</span>
           </h1>
-          <p className="flex text-base lg:text-[20px] mb-7 max-w-[420px] lg:max-w-[550px]">
+          <p className="flex text-base lg:text-[20px] mb-8 mt-3 max-w-[420px] lg:max-w-[550px] text-[#7d7d7d]">
             Your best quality photo need a best album for your memories store,
-            and that's we provide with amazing services.
+            and {"that's"} we provide with amazing services.
           </p>
           <div className="flex items-center gap-2">
             <Link className="bg-primary hover:bg-darkPrimary duration-200  text-white text-[18px] shadow-md font-[400] py-[13px] px-[14px] rounded-md tracking-wider">
