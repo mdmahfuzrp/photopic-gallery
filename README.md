@@ -9,7 +9,6 @@
 ```sh
 git clone https://github.com/mdmahfuzrp/photopic-gallery.git
 ```
-- hello
 ### Install Package
 3. Install related packages
 ```sh
